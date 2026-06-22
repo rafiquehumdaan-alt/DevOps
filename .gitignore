@@ -1,0 +1,4 @@
+bandit-passwords-private.txt
+*.pem
+*.key
+*.rsa
