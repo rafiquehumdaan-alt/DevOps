@@ -82,22 +82,3 @@ This repository documents my journey from IT Support into DevOps. It contains no
 
 This repository will also contain practical projects completed throughout the learning journey, demonstrating real-world DevOps skills and workflows.
 
-## Current Progress
-
-✅ Linux Fundamentals
-
-🔄 Bash Scripting
-
-⏳ Git
-
-⏳ Networking
-
-⏳ Docker
-
-⏳ AWS
-
-⏳ Terraform
-
-⏳ CI/CD
-
-⏳ Kubernetes
