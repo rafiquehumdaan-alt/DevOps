@@ -1,0 +1,23 @@
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "5000:80"
+    depends_on:
+      - flask
+
+  flask:
+    build: .
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: "6379"
+    depends_on:
+      - redis
+
+  redis:
+    build: ./redis
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
