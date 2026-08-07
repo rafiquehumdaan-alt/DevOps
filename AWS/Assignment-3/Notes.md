@@ -6,39 +6,6 @@ The objective of this assignment was to deploy a static website using Amazon S3,
 
 ---
 
-## Architecture
-
-```
-User
-   │
-HTTPS
-   │
-   ▼
-Amazon CloudFront
-(Content Delivery Network)
-   │
-HTTP
-   │
-   ▼
-Amazon S3 Static Website
-(index.html & error.html)
-```
-
-Optional custom domain:
-
-```
-humdaan.co.uk
-      │
-Cloudflare DNS
-      │
-Route 53 Hosted Zone
-      │
-CloudFront
-      │
-Amazon S3
-```
-
----
 
 ## AWS Services Used
 

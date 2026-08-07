@@ -8,66 +8,7 @@ The API accepts student submissions through a POST request, stores the data in D
 
 This assignment introduced serverless computing, IAM least privilege, REST APIs, API Gateway, Lambda, DynamoDB, CloudWatch logging, API Keys and Usage Plans.
 
----
 
-# Final Architecture
-                         CLIENT
-               (curl / Postman / Browser)
-                        |
-          POST /submit          GET /students
-                 |                   |
-                 +---------+---------+
-                           |
-                 API Gateway (REST API)
-               StudentSubmissionAPI
-               /submit      /students
-                   |             |
-                   |             |
-        +----------+             +-----------+
-        |                                    |
-        v                                    v
- Lambda: student-submission         Lambda: get-students
-        |                                    |
-   DynamoDB PutItem                    DynamoDB Scan
-        |                                    |
-        +---------------+--------------------+
-                        |
-                        v
-               DynamoDB Table: students
-         -------------------------------
-         Partition Key: id
-         Attributes:
-         - timestamp
-         - payload
-
-                ▲
-                │
-         CloudWatch Logs
-                ▲
-                │
-      Both Lambda Functions
-
-IAM (Least Privilege)
-
-student-submission-role
-├── AWSLambdaBasicExecutionRole
-└── DynamoDB PutItem only
-
-get-students-role
-├── AWSLambdaBasicExecutionRole
-└── DynamoDB Scan only
-
-API Security
-
-API Key
-     │
-     ▼
-Usage Plan
-     │
-     ▼
-Protected API Endpoints
-
----
 
 # AWS Services Used
 

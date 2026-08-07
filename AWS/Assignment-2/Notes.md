@@ -25,29 +25,7 @@ The goals of this assignment were to:
 
 ---
 
-# Architecture
 
-```
-                           Internet
-                                │
-                     HTTP (Port 80)
-                                │
-                   301 Redirect to HTTPS
-                                │
-                     HTTPS (Port 443)
-                                │
-                 Application Load Balancer
-                                │
-                         Target Group
-                                │
-                    Auto Scaling Group
-                     │                 │
-                     ▼                 ▼
-             EC2 Instance       EC2 Instance
-                (NGINX)             (NGINX)
-```
-
----
 
 # AWS Services Used
 

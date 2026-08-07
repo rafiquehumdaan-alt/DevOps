@@ -22,43 +22,6 @@ This assignment provides hands-on experience with AWS networking concepts that f
 
 ---
 
-## Architecture
-
-```
-                                  Internet
-                                      │
-                                      │
-                         ┌────────────────────────┐
-                         │ Internet Gateway (IGW) │
-                         └─────────────┬──────────┘
-                                       │
-                        DevOps-VPC (10.0.0.0/16)
-                                       │
-             ┌─────────────────────────┴─────────────────────────┐
-             │                                                   │
-             │                                                   │
- ┌─────────────────────────┐                      ┌─────────────────────────┐
- │ Public Subnet           │                      │ Private Subnet          │
- │ 10.0.1.0/24             │                      │ 10.0.2.0/24             │
- │ Route → IGW             │                      │ Route → NAT Gateway     │
- └─────────────┬───────────┘                      └─────────────┬───────────┘
-               │                                                │
-      ┌────────▼────────┐                              ┌────────▼────────┐
-      │ Public EC2      │                              │ Private EC2     │
-      │ Public IP       │────────────SSH──────────────►│ No Public IP    │
-      │ Bastion Host    │                              │ Internal Server │
-      └────────┬────────┘                              └─────────────────┘
-               │
-      ┌────────▼────────┐
-      │ NAT Gateway     │
-      │ Elastic IP      │
-      └────────┬────────┘
-               │
-               ▼
-            Internet
-```
-
----
 
 ## AWS Services Used
 
