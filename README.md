@@ -82,3 +82,6 @@ This repository documents my journey from IT Support into DevOps. It contains no
 
 This repository will also contain practical projects completed throughout the learning journey, demonstrating real-world DevOps skills and workflows.
 
+The format will usually be module notes in each folder and then the assignments/projects/levels within the same folder.
+
+
