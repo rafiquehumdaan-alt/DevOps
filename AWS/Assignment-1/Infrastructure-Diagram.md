@@ -1,3 +1,6 @@
+## Architecture Diagram
+
+```text
                                   Internet
                                       │
                                       │
@@ -19,10 +22,9 @@
                │                                                │
       ┌────────▼────────┐                              ┌────────▼────────┐
       │ Public-EC2      │                              │ Private-EC2     │
-      │ Public IP       │                              │ No Public IP    │
-      │ SSH + HTTP      │────────────SSH──────────────►│ SSH from Public │
+      │ Public IP       │────────────SSH──────────────►│ No Public IP    │
+      │ SSH + HTTP      │                              │ SSH from Public │
       └────────┬────────┘                              └─────────────────┘
-               │
                │
       ┌────────▼────────┐
       │ NAT Gateway     │
@@ -31,3 +33,4 @@
                │
                ▼
             Internet
+```
