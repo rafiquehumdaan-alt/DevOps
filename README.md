@@ -82,6 +82,6 @@ This repository documents my journey from IT Support into DevOps. It contains no
 
 This repository will also contain practical projects completed throughout the learning journey, demonstrating real-world DevOps skills and workflows.
 
-The format will usually be module notes in each folder and then the assignments/projects/levels within the same folder.
+The format will usually be module notes in each folder and then the assignments/projects/levels within the same folder. You will find a README.md for each assignment I have completed which goes through the assignment in detail. The Linux and Bash module had levels to complete rather than assignments, unlike the other modules. 
 
 

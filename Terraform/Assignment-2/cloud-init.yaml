@@ -1,0 +1,26 @@
+#cloud-config
+
+package_update: true
+
+packages:
+  - nginx
+
+write_files:
+  - path: /var/www/html/index.html
+    permissions: '0644'
+    content: |
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>Terraform Cloud-Init</title>
+      </head>
+      <body>
+          <h1>Deployment successful!</h1>
+          <p>This EC2 instance was created with Terraform.</p>
+          <p>NGINX was installed automatically using cloud-init.</p>
+      </body>
+      </html>
+
+runcmd:
+  - systemctl enable nginx
+  - systemctl restart nginx
