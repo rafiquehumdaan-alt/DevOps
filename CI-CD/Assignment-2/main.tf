@@ -3,8 +3,8 @@ terraform {
 }
 
 variable "environment" {
-  type    = string
-  default = "dev"
+type = string
+default = "dev"
 }
 
 output "environment_name" {
