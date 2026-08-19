@@ -1,0 +1,30 @@
+name: Terraform CI
+
+on:
+  push:
+    paths:
+      - "CI-CD/Assignment-2/**"
+      - ".github/workflows/assignment-2-terraform.yml"
+
+jobs:
+  terraform-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Check Terraform formatting
+        run: terraform fmt -check
+        working-directory: CI-CD/Assignment-2
+
+      - name: Initialise Terraform
+        run: terraform init
+        working-directory: CI-CD/Assignment-2
+
+      - name: Validate Terraform
+        run: terraform validate
+        working-directory: CI-CD/Assignment-2
