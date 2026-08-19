@@ -1,4 +1,3 @@
-````markdown
 # CI/CD Notes - Part 3: YAML & Pipeline Syntax
 
 > Covers:
@@ -1628,4 +1627,3 @@ A job is a collection of steps executed on a runner, while a step is an individu
 ### What happens if a required pipeline stage fails?
 
 Dependent stages normally do not continue, helping prevent broken code from progressing further through the pipeline.
-````

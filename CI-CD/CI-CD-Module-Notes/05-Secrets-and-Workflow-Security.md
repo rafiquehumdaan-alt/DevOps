@@ -950,4 +950,3 @@ OIDC avoids storing permanent credentials and uses temporary credentials with li
 ### Why should third-party GitHub Actions be reviewed carefully?
 
 Because they execute code within your workflow and may have access to repository contents, tokens or other sensitive resources.
-````

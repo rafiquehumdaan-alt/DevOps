@@ -1,4 +1,3 @@
-````markdown
 # CI/CD Notes - Part 2: GitHub Actions Setup
 
 > Covers:
@@ -1231,4 +1230,3 @@ GitHub-hosted runners are temporary machines managed by GitHub, while self-hoste
 ### What does `actions/checkout` do?
 
 It checks out the repository's source code onto the runner so later workflow steps can access the project's files.
-````

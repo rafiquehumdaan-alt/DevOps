@@ -1,4 +1,3 @@
-````markdown
 # CI/CD Notes - Part 6: Reusable Workflows & Custom Actions
 
 > Covers:
@@ -1213,4 +1212,3 @@ Inputs allow the same workflow to be configured differently by different project
 ### Why should shared actions and workflows be versioned?
 
 Versioning prevents unexpected changes from immediately affecting every project that consumes the shared automation.
-````

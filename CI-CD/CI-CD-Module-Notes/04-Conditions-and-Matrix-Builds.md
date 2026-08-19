@@ -1054,4 +1054,3 @@ if: ${{ github.ref == 'refs/heads/main' }}
 ### What is the benefit of running tests in parallel?
 
 Parallel testing reduces pipeline execution time and provides faster feedback to developers.
-````

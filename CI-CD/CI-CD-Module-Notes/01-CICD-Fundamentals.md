@@ -1,4 +1,3 @@
-````markdown
 # CI/CD Notes - Part 1: CI/CD Fundamentals
 
 > Covers:
@@ -1242,4 +1241,3 @@ CI/CD automates the process of moving code from development toward production, p
 ### What are some popular CI/CD tools?
 
 Examples include GitHub Actions, GitLab CI/CD, Jenkins, CircleCI, Azure Pipelines and AWS CodePipeline.
-````
