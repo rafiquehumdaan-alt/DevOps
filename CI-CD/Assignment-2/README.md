@@ -261,3 +261,5 @@ The completed pipeline automatically performs:
 The pipeline was also deliberately tested with badly formatted Terraform code to confirm that incorrect code causes the workflow to fail.
 
 After correcting the code, the pipeline successfully passed again.
+
+I am aware that GitHub Actions workflows must be stored in .github/workflows/ to run. I moved the YAML file here after completing the assignment purely for organisation and documentation purposes.
