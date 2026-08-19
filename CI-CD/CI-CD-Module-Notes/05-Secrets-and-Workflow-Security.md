@@ -1,4 +1,3 @@
-````markdown id="cicd5sec"
 # CI/CD Notes - Part 5: Secrets & Workflow Security
 
 > Covers:

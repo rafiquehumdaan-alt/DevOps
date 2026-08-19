@@ -1,4 +1,3 @@
-````markdown id="cicd4mx"
 # CI/CD Notes - Part 4: Conditions, Expressions & Matrix Builds
 
 > Covers:
