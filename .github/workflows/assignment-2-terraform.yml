@@ -17,6 +17,9 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
 
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
+
       - name: Check Terraform formatting
         run: terraform fmt -check
         working-directory: CI-CD/Assignment-2
@@ -27,4 +30,8 @@ jobs:
 
       - name: Validate Terraform
         run: terraform validate
+        working-directory: CI-CD/Assignment-2
+
+      - name: Run TFLint
+        run: tflint
         working-directory: CI-CD/Assignment-2
