@@ -1,8 +1,6 @@
 # DevOps Study
 
-This repository documents my journey from IT Support into DevOps. It contains notes, labs, command references, challenge walkthroughs, and practical projects completed throughout my studies.
-
-## Learning Roadmap
+This repository contains my personal notes for all thing devops related. It contains notes, labs, command references, challenge walkthroughs, and projects completed.
 
 ### 1. Linux Fundamentals
 
@@ -78,10 +76,6 @@ This repository documents my journey from IT Support into DevOps. It contains no
 * Ingress
 * Cluster management
 
-## Projects
 
-This repository will also contain practical projects completed throughout the learning journey, demonstrating real-world DevOps skills and workflows.
-
-The format will usually be module notes in each folder and then the assignments/projects/levels within the same folder. You will find a README.md for each assignment I have completed which goes through the assignment in detail. The Linux and Bash module had levels to complete rather than assignments, unlike the other modules. 
 
 
